@@ -15,7 +15,7 @@ body {
 .about-me,
 .project-highlights,
 .client-testmonial {
-    background-image: url(images/bg-effect.png);
+    background-image: url("images/bg-effect.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -731,4 +731,5 @@ li {
     .header-hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -7px);
     }
+
 }
