@@ -14,8 +14,9 @@ body {
 .homepage-banner,
 .about-me,
 .project-highlights,
-.client-testmonial {
-    background-image: url("images/bg-effect.png");
+.client-testmonial,
+.page-header {
+    background-image: url(images/bg-effect.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -26,7 +27,8 @@ body {
 }
 
 .about-me,
-.client-testmonial {
+.client-testmonial,
+.page-header {
     background-position: top left;
 }
 
@@ -79,6 +81,32 @@ li {
     max-width: 1472px;
     margin: 0 auto;
     padding: 0 16px;
+}
+
+/* Page Header */
+.page-header {
+    padding: 135px 0 90px;
+    border-bottom: 1px solid #949494;
+}
+
+.page-header__main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.page-header__title h2 {
+    color: #FFF;
+    font-size: 72px;
+    line-height: 86px;
+    font-weight: 700;
+}
+
+.page-header__description p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
 }
 
 /* Header */
@@ -411,6 +439,201 @@ li {
     display: none;
 }
 
+/* Our Mission */
+.our-mission {
+    padding: 90px 0;
+}
+
+.our-mission__main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.our-mission__content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.our-mission__content--heading,
+.our-mission__content--description {
+    width: 100%;
+}
+
+.our-mission__content--heading {
+    max-width: 55%;
+}
+
+.our-mission__content--heading h2 {
+    color: #FFFFFF;
+    font-size: 80px;
+    line-height: 84px;
+    font-weight: 700;
+}
+
+.our-mission__content--description {
+    max-width: 45%;
+}
+
+.our-mission__content--description p {
+    color: #949494;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.66px;
+    font-weight: 500; 
+}
+
+.our-mission__images--main {
+    display: flex;
+    gap: 28px;
+    position: relative;
+}
+
+.our-mission__images--main::before,
+.our-mission__images--main::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #FF9142;
+    border-radius: 99px;
+}
+
+.our-mission__images--main::before {
+    width: 55px;
+    height: 178px;
+    top: 0px;
+    left: -28px;
+}
+
+.our-mission__images--main::after {
+    width: 178px;
+    height: 55px;
+    bottom: -25px;
+    right: 0;
+}
+
+.our-mission__image {
+    width: 100%;
+}
+
+.our-mission__image.small-image {
+    max-width: 30%;
+} 
+
+.our-mission__image.large-image {
+    max-width: 70%;
+}
+
+.our-mission__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Follow me */
+.follow-me {
+    padding: 50px 0 200px;
+}
+
+.follow-me__main--heading {
+    padding-bottom: 25px;
+}
+
+.follow-me__main--heading h3 {
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 80px;
+    letter-spacing: -0.5px;
+    font-weight: 700; 
+}
+
+.follow-me__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.follow-me__item a {
+    color: #949494;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 4px;
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+
+/* Proejct Story */
+.project-story {
+    padding: 120px 0 88px;
+}
+
+.project-story__wrapper,
+.project-story__details--main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 64px;
+}
+
+.project-story__details--main {
+    padding-top: 88px;
+}
+
+.project-story__details--images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px
+}
+
+.project-story__image {
+    width: 100%;
+}
+
+.project-story__image img,
+.project-story__details--image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+}
+
+.project-story__content,
+.project-story__details {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.project-story__content--heading,
+.project-story__content--heading {
+    padding-bottom: 30px;
+}
+
+.project-story__content--heading h3,
+.project-story__content--heading h3 {
+    color: #FFF;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 4px;
+    font-weight: 700; 
+}
+
+.project-story__content--description p,
+.project-story__content--description p {
+    color: #949494;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400; 
+}
+
+.project-story__content--description p+p,
+.project-story__content--description p+p {
+    padding-top: 24px;
+}
+
 /* Footer */
 .site-footer {
     background-color: #131313;
@@ -731,5 +954,4 @@ li {
     .header-hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -7px);
     }
-
 }
